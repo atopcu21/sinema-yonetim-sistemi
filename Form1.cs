@@ -16,7 +16,7 @@ namespace WindowsFormsApp
         private Dictionary<Button, Tuple<int, int, bool>> buttonInfo = new Dictionary<Button, Tuple<int, int, bool>>();
 
         // SQL Server bağlantı dizesi
-        private string connectionString = "Server=localhost;Database=uyumsoft;Integrated Security=True;";
+        private string connectionString;
         private int kisiNooo = 1;
 
         public Form1(AnaMenu anaMenu)
@@ -111,6 +111,7 @@ namespace WindowsFormsApp
 
         private void SaveButtonInfoToDatabase(int row, int column, bool isRed, string salon)
         {
+            connectionString = AnaMenu.cString;
             // SQL komutu: Veritabanına veri eklemek
             string query = "INSERT INTO uyumsoft.dbo.deneme (kisiNo, salonNo, koordinat) VALUES (@kisiNo, @salonNo, @koordinat)";
 

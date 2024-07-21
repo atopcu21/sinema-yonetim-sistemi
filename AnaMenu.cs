@@ -15,7 +15,10 @@ namespace WindowsFormsApp1
         private Button button3;
 
         private Salono salono;
+        private CheckBox checkBox1;
         private Form1 form1;
+
+        public static String cString = "Server=192.168.1.100;Database=uyumsoft;Integrated Security=True;";
 
         public AnaMenu()
         {
@@ -40,6 +43,7 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -105,9 +109,22 @@ namespace WindowsFormsApp1
             this.label3.TabIndex = 8;
             this.label3.Text = "Bilet Satış";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(477, 12);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(95, 23);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "anil pc database";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // AnaMenu
             // 
             this.ClientSize = new System.Drawing.Size(584, 701);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -144,6 +161,19 @@ namespace WindowsFormsApp1
         {
             this.Hide();
             form1.Show();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                cString = "Server=192.168.1.100;Database=uyumsoft;User Id=sa;Password=Aknaialn2003;";
+            }
+            else
+            {
+                cString = "Server=192.168.1.100;Database=uyumsoft;Integrated Security=True;";
+            }
+
         }
     }
 }
