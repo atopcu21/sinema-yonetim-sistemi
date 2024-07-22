@@ -32,3 +32,15 @@ V:\uyumsoft\WindowsFormsApp1(19.07)\sinema-yonetim-sistemi\obj\Debug\WindowsForm
 V:\uyumsoft\WindowsFormsApp1(19.07)\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 V:\uyumsoft\WindowsFormsApp1(19.07)\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.exe
 V:\uyumsoft\WindowsFormsApp1(19.07)\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.AnaMenu.resources
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp.Form1.resources
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.Salono.resources
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Hp\Source\Repos\sinema-yonetim-sistemi\obj\Debug\WindowsFormsApp1.pdb

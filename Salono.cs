@@ -7,12 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
     public partial class Salono : Form
     {
         private AnaMenu anaMenu;
+        private string connectionString;
+        private string tableName;
+        private string sqlScript;
         public Salono(AnaMenu anaMenu)
         {
             InitializeComponent();
@@ -60,10 +64,32 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            connectionString = AnaMenu.cString;
             decimal satir = numericUpDown1.Value;
             decimal sutun = numericUpDown2.Value;
             int salonNo = Convert.ToInt32((textBox1.Text));
+
+            string tableName = $"dbo.Salon_{salonNo}";
+
+
+
+            string sqlScript = $@"
+            IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Salon_{salonNo}')
+            BEGIN
+                CREATE TABLE {tableName} (
+                    ID INT IDENTITY(1,1) PRIMARY KEY,
+                    Satir DECIMAL(18, 2) NOT NULL,
+                    Sutun DECIMAL(18, 2) NOT NULL
+                );
+
+                INSERT INTO {tableName} (Satir, Sutun) VALUES ({satir}, {sutun});
+            END
+            ELSE
+            BEGIN
+                INSERT INTO {tableName} (Satir, Sutun) VALUES ({satir}, {sutun});
+            END
+            ";
+
             MessageBox.Show(string.Format("Satır: {0}, Sütun: {1} Salon No: {2}", satir, sutun, salonNo));
 
         }

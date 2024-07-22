@@ -113,11 +113,11 @@ namespace WindowsFormsApp1
             // 
             this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(477, 12);
+            this.checkBox1.Location = new System.Drawing.Point(478, 12);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(95, 23);
+            this.checkBox1.Size = new System.Drawing.Size(80, 23);
             this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "anil pc database";
+            this.checkBox1.Text = "                     ";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -175,5 +175,6 @@ namespace WindowsFormsApp1
             }
 
         }
+        public void test() { MessageBox.Show("hello"); }
     }
 }
